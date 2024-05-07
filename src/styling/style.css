@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.container1 {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+
+
+.fstcar{
+    position: fixed; 
+    top: 80%;
+    bottom: 0;
+    z-index: 3;
+    left: 30%;
+    width: 30%;
+}
+
+
+

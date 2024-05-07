@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.link {
+    margin: 0 2%; 
+}
+
+.draw {
+    width: 60%; 
+    height: auto;
+    z-index: 9; 
+}

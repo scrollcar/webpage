@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="src/styling/header.css">
+<link rel="stylesheet" href="src/styling/speedometer.css">
+<link rel="stylesheet" href="src/styling/style.css">
+<link rel="shortcut icon" type="image/png" href="src/imgs/car4.png">
+<title>$CAR</title>
+</head>
+<body>
+<div class="container1">
+    <div class="header">
+      <div class="link"><img class="draw" src="src/imgs/dollarcar.png"></div>
+      <div class="link"><img class="draw" src="src/imgs/ca.png"></div>
+      <div class="link"><img class="draw" src="src/imgs/telegram.png"></div>
+      <div class="link"><img class="draw" src="src/imgs/x.png"></div>
+      <div class="link"><img class="draw" src="src/imgs/renounce.png"></div>
+      <div class="link"><img class="draw" src="src/imgs/tokenomics.png"></div>
+      <div class="link"><img class="draw" src="src/imgs/roadmap.png"></div>
+  </div>
+    <div class="trees"></div>
+    <div class="road"></div>
+    <div class="car"></div>
+    <div class="container2">
+        <img class="speedometer" src="src/imgs/speedometer2.png" alt="speedometer">
+        <img class="needle" src="src/imgs/needle2.png" alt="needle">
+      </div>
+      <div class="speed-input">
+        <input type="number" id="speed" name="speed" min="0" max="180" value="90">
+      </div>
+      <div>
+        <img class="fstcar" src="src/imgs/fastestcar.png"></ul>
+      </div>
+</div>
+<style>
+  .road {
+    position: fixed; 
+    top: 55vh;
+    bottom: 0;
+    width: 100vw;
+    z-index: 1;
+    background: url('src/imgs/road3.png') repeat-x;
+    background-size: 54%; 
+}
+.trees {
+    position: fixed; 
+    width: 100vw;
+    height: 34vh;
+    z-index: 0;
+    background-image: url('src/imgs/tree3.png');
+    top: 25%;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+.car {
+    position: fixed; 
+    top: 55vh;
+    bottom: 0;
+    width: 100vw;
+    z-index: 3;
+    background: url('src/imgs/car4.png') no-repeat;
+    background-size: 14%; 
+    left: 5%;
+
+}
+</style>
+<script>
+    const container = document.querySelector('.container');
+    const road = document.querySelector('.road');
+    const trees = document.querySelector('.trees');
+    const car = document.querySelector('.car');
+    
+    let scrollPosition = 0;
+    
+    window.addEventListener('wheel', function(event) {
+        event.preventDefault();
+        scrollPosition -= event.deltaY;
+        road.style.backgroundPositionX = `${scrollPosition}px`;
+        trees.style.backgroundPositionX = `${scrollPosition / 2}px`; // Adjust the speed of the trees
+    });
+</script>
+<script src="speedometer.js"></script>
+</body>
+</html>

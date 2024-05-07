@@ -1,0 +1,28 @@
+.container2 {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    top: 69%;
+    left: 80%;
+    bottom: 0;
+    z-index: 4;
+  }
+
+  .speedometer {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+
+  }
+  .needle {
+    position: absolute;
+    top: 36%;
+    left: 48%;
+    width: 33%; /* Adjust the width of the needle image */
+    transform-origin: 0 50%; /* Rotate around the left side */
+    z-index: 2;
+  }
+
+  .speed-input input[type="number"] {
+    display: none;
+  }
