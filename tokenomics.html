@@ -4,23 +4,70 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="src/styling/header.css">
-<title>Parallax Car</title>
+<title>$CAR</title>
 </head>
 <body>
 <div class="container">
  
     <div class="header">
-        <div class="link"><a href="index.html"><img class="draw" src="src/imgs/dollarcar.png"></a></div>
-        <div class="link"><a href="https://www.basescan.org" target="_blank"><img class="draw" src="src/imgs/ca.png"></a></div>
-        <div class="link"><a href="https://www.telegram.com" target="_blank"><img class="draw" src="src/imgs/telegram.png"></a></div>
-        <div class="link"><a href="https://www.x.com" target="_blank"><img class="draw" src="src/imgs/x.png"></a></div>
-        <div class="link"><a href="https://www.basescan.org" target="_blank"><img class="draw" src="src/imgs/renounce.png"></a></div>
-        <div class="link"><a href="tokenomics.html"><img class="draw" src="src/imgs/tokenomics.png"></a></div>
-        <div class="link"><a href="roadmap.html"><img class="draw" src="src/imgs/roadmap.png"></a></div>
+      <div class="link"><a href="index.html"><img class="draw" src="src/imgs/dollarcar.png"></a></div>
+      <div class="link"><a href="https://www.basescan.org" target="_blank"><img class="draw" src="src/imgs/ca.png"></a></div>
+      <div class="link"><a href="https://www.telegram.com" target="_blank"><img class="draw" src="src/imgs/telegram.png"></a></div>
+      <div class="link"><a href="https://www.x.com" target="_blank"><img class="draw" src="src/imgs/x.png"></a></div>
+      <div class="link"><a href="tokenomics.html"><img class="draw" src="src/imgs/tokenomics.png"></a></div>
+      <div class="link"><a href="roadmap.html"><img class="draw" src="src/imgs/roadmap.png"></a></div>
+      <div class="link"><a href="https://scroll.ambient.finance/" target="_blank"><img class="draw" src="src/imgs/buy.png"></a></div>
+      </div>
+      
+      <div class="container2">
+        <img class="piechart" src="src/imgs/piechart.png">
+        <img class="tax" src="src/imgs/tax.png">
       </div>
 
-</div>
+      <div class="disclaimer">Disclaimer: This is a meme token and for entertainment purposes only. There is no intrinsic value or expected financial return.</div>
+      
 
+</div>
+<style>
+  .container {
+    position: relative;
+  }
+  
+  .container2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    height: 80vh; 
+  }
+  
+  .piechart {
+    position: absolute;
+    top: 10%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    max-width: 35%; 
+  }
+
+  .tax {
+    position: absolute;
+    top: 80%;
+    left: 48%; 
+    transform: translateX(-50%); 
+    max-width: 30%; 
+  }
+  
+  .disclaimer{
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the text horizontally */
+}    
+  
+  </style>
 
 </body>
 </html>

@@ -21,9 +21,16 @@ body, html {
     top: 80%;
     bottom: 0;
     z-index: 3;
-    left: 30%;
+    left: 2%;
     width: 30%;
 }
 
-
+.adres{
+    position: fixed; 
+    top: 98%;
+    bottom: 0;
+    z-index: 4;
+    left: 60%;
+    width: 30%;
+}
 
